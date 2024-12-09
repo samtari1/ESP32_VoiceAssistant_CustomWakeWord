@@ -18,7 +18,7 @@ i2s_config_t adcI2SConfig = {
     .sample_rate = 16000,
     .bits_per_sample = I2S_BITS_PER_SAMPLE_16BIT,
     .channel_format = I2S_CHANNEL_FMT_ONLY_LEFT,
-    .communication_format = I2S_COMM_FORMAT_I2S_LSB,
+    .communication_format = I2S_COMM_FORMAT_STAND_MSB,
     .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
     .dma_buf_count = 4,
     .dma_buf_len = 64,
@@ -32,7 +32,7 @@ i2s_config_t i2sMemsConfigBothChannels = {
     .sample_rate = 16000,
     .bits_per_sample = I2S_BITS_PER_SAMPLE_32BIT,
     .channel_format = I2S_MIC_CHANNEL,
-    .communication_format = i2s_comm_format_t(I2S_COMM_FORMAT_I2S),
+    .communication_format = I2S_COMM_FORMAT_STAND_I2S,
     .intr_alloc_flags = ESP_INTR_FLAG_LEVEL1,
     .dma_buf_count = 4,
     .dma_buf_len = 64,
@@ -86,6 +86,7 @@ void setup()
     delay(5000);
     ESP.restart();
   }
+  //The ESP.getHeapSize() function is part of the ESP32 Arduino core library
   Serial.printf("Total heap: %d\n", ESP.getHeapSize());
   Serial.printf("Free heap: %d\n", ESP.getFreeHeap());
 

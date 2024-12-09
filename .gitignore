@@ -149,12 +149,14 @@ fonts/win/*
 # tensorboard
 logs/*
 
+# igore the processed_audio, because it is just for debugging
+processed_audio
 
 # ignore the speech data
 speech_data
 *.npz
 
 # models
-*.model
+*.keras
 *.tflite
 logs

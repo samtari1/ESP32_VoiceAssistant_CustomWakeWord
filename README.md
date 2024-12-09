@@ -1,4 +1,19 @@
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z734F5Y)
+################# New ReadMe file #######################################
+
+This project is a fork of https://github.com/atomic14/diy-alexa 
+
+Sine the original project was developed 4 years ago, I encountered many errors probably due to the update of the related packages.
+
+I modify the code to adapt to Python 3.12.7 and replace package "tensorflow-io" with "librosa" to avoid errors.
+
+Download Training Audio data from the link below and store in "speech_data" folder in "model" folder:
+https://storage.cloud.google.com/download.tensorflow.org/data/speech_commands_v0.02.tar.gz - approx 2.3 GB
+
+In the "model" folder, I added  "Normalize_Reposition_AddBackground_GetSectrogram_AudioData.py" for visualization and audiolization (not sure if it is a word...) of the audio processing (normalization, reposition, and add-background-noise). 
+ 
+##################Below is the original ReadMe File ##################
+
+
 # DIY Alexa With the ESP32 and Wit.AI
 
 All the source code for this tutorial is in [GitHub](https://github.com/atomic14/diy-alexa)

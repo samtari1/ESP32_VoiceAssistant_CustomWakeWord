@@ -1,5 +1,16 @@
 # DIY Alexa ESP32 Firmware
 
+
+If there is a "Guru Meditation Error", it is because the ESP32 ran out of memory, my solution is to delete some audio files in the "data" folder, such as some jokes.
+Reference: https://github.com/atomic14/diy-alexa/issues/53
+
+
+If there is an error like "
+ERROR: bit depth 16379 is not supported please use 16 bit signed integer
+ERROR: sample rate 200 is not supported please us 16KHz
+", it is because the audio files in the "data" folder not having been uploaded to ESP32 yet. Just need to upload using PlatformIO -> PROJECT TASKS -> Platform -> Upload Filesystem Image.
+Reference: https://github.com/atomic14/diy-alexa/issues/31
+
 This folder contains the firmware for running DIY Alexa on the ESP32.
 
 We are using Platform.io to build the firmware.
