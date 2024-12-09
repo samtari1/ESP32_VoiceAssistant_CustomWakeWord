@@ -1,10 +1,10 @@
+librosa
 tensorflow
 matplotlib
 pandas
 numpy
 jupyter
 scipy
-tensorflow-io
 tqdm
 pyaudio
 jupyter_contrib_nbextensions

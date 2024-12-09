@@ -1,5 +1,10 @@
 # DIY Alexa Wake Word Detection
 
+Python Version: 3.12.7 
+
+Modified the Generate_Training_Data.ipynb file to Generate_Training_Data_withoutTF_new.py and replace package "tensorflow-io" with "librosa" to avoid errors.
+
+
 This folder contains the Jupyter notebooks for creating the training data, training the model, and exporting the model to TensorFlow Lite.
 
 ## Setup
