@@ -160,3 +160,5 @@ speech_data
 *.keras
 *.tflite
 logs
+
+.DS_Store
